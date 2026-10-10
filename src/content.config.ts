@@ -80,7 +80,7 @@ const homepageCollection = defineCollection({
     banner: z.object({
       title: z.string(),
       content: z.string(),
-      image: z.string(),
+      image: z.string().optional(),
       button: z.object({
         enable: z.boolean(),
         label: z.string(),
